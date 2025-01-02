@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #ee4d2d;
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+}
+
+* {
+  /* tất cả thẻ sẽ kế thừa lại thẻ chứa nó tới box-sizing của thẻ cha */
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", serif;
+  box-sizing: border-box;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  /* 0% */
+  from {
+    opacity: 0;
+  }
+  /* 100% */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes headerNotifyGrow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
